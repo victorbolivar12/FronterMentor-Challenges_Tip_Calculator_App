@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="logo">
+    <img src="images/logo.svg" alt="">
+  </div>
+
+  <div class="container">
+    <div class="keyboardzone">
+
+      <div class="bill">
+        <label class="title" for="quantity">Bill</label>
+        <input class="numberentry icono-placeholder-bill" type="number" placeholder="0">
+      </div>
+
+      <label class="title percentage" for="quantity">Select tip %</label>
+      <div class="bottom-grilla">
+        <button class="grid-content hovereffects">5%</button>
+        <button class="grid-content hovereffects">10%</button>
+        <button class="grid-content hovereffects">15%</button>
+        <button class="grid-content hovereffects">25%</button>
+        <button class="grid-content hovereffects">50%</button>
+        <input class="grid-content custom" type="number" placeholder="Custom">
+      </div>
+
+      <div class="numberofpeaple">
+        <label class="title" for="quantity">Number of Peaple</label>
+        <input class="numberentry icono-placeholder-people" type="number" placeholder="0">
+      </div>
+
+    </div>
+    <div class="displayzone">
+
+      <div class="display-container">
+        <div class="container-display-text">
+          <h1 class="display-title">Tip Amounts</h1>
+          <h2 class="display-subtitle">/ person</h2>
+        </div>
+        <input class="display icon-dollar" type="number" placeholder="0.00">
+      </div>
+
+      <div class="display-container">
+        <div class="container-display-text">
+          <h1 class="display-title">Total</h1>
+          <h2 class="display-subtitle">/ person</h2>
+        </div>
+        <input class="display icon-dollar" type="number" placeholder="0.00">
+      </div>
+
+      <button class="reset-buttom">Reset</button>
+
+    </div>
+  </div>
+  <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Victor Bolivar</a>.
+  </div>
+  -->
+</body>
+</html>
