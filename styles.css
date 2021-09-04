@@ -187,4 +187,50 @@ body{
     text-transform: uppercase;
 }
 
+.attribution{
+    position:absolute;
+    top: 93%;
+    left: 30%;
+    font-size: 20px;
+}
 
+/*-------- mobile-------*/
+
+@media (max-width: 375px){
+    .container{
+        width: 90%;
+        height: 100vh;
+        display: block;
+    }
+
+    .keyboardzone{
+        width: 90%;
+        margin-bottom: 0;
+    }
+    .bottom-grilla{
+        grid-template-columns: repeat(2, 145px);
+        grid-template-rows: minmax(55px,auto) repeat(2,50px);
+    }
+
+    .displayzone{
+        width: 90%;
+        height: 230px;
+        margin-top: 0;
+    }
+    .title{
+        margin-bottom: 5%;
+    }
+
+    .reset-buttom{
+        margin: 5% 10%;
+    }
+    
+
+    .display-container{
+        padding: 30px 25px 1px; /*arriba derecha-izquierda abajo*/
+    }
+    
+    .attribution{
+        display: none;
+    }
+}
