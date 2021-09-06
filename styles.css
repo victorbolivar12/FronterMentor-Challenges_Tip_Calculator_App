@@ -31,7 +31,7 @@ body{
 
 .container{
     width: 50%;
-    height: 370px;
+    height: 370px; /*370px*/
     margin: auto;
     padding: 20px;
     background-color: var(--White);
@@ -117,7 +117,13 @@ body{
 
 .bottom-grilla .custom{
     background: var(--Lightgrayishcyana);
+    text-align: center;
 }
+
+.bottom-grilla .custom::placeholder{
+    color: var(--VeryDarkCyan);
+}
+
 .bottom-grilla .custom:focus{
     outline: none;
 }
@@ -144,7 +150,7 @@ body{
 
 .display-container{
     display: flex;
-    padding: 35px;
+    padding: 30px;
     justify-content: space-between;
 }
 
@@ -156,15 +162,9 @@ body{
     font-weight: 700;
     background-color: var(--VeryDarkCyan);
     border: none;
-    
-}
-.display::placeholder{
     color: var(--Strongcyan);
 }
 
-.display:focus{
-    outline: none;
-}
 
 .icon-dollar{
     background-image: url(images/icon-dollar.svg);
@@ -193,6 +193,9 @@ body{
     left: 30%;
     font-size: 20px;
 }
+
+/*-------- resposive Dising-------*/
+
 
 /*-------- mobile-------*/
 

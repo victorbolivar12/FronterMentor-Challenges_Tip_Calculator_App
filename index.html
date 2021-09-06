@@ -21,22 +21,22 @@
 
       <div class="bill">
         <label class="title" for="quantity">Bill</label>
-        <input class="numberentry icono-placeholder-bill" type="number" placeholder="0">
+        <input class="numberentry icono-placeholder-bill" id="inputbill" type="number" placeholder="0">
       </div>
 
       <label class="title percentage" for="quantity">Select tip %</label>
       <div class="bottom-grilla">
-        <button class="grid-content hovereffects">5%</button>
-        <button class="grid-content hovereffects">10%</button>
-        <button class="grid-content hovereffects">15%</button>
-        <button class="grid-content hovereffects">25%</button>
-        <button class="grid-content hovereffects">50%</button>
+        <button class="grid-content hovereffects" name="tipbutton">5%</button>
+        <button class="grid-content hovereffects" name="tipbutton">10%</button>
+        <button class="grid-content hovereffects" name="tipbutton">15%</button>
+        <button class="grid-content hovereffects" name="tipbutton">25%</button>
+        <button class="grid-content hovereffects" name="tipbutton">50%</button>
         <input class="grid-content custom" type="number" placeholder="Custom">
       </div>
 
       <div class="numberofpeaple">
         <label class="title" for="quantity">Number of Peaple</label>
-        <input class="numberentry icono-placeholder-people" type="number" placeholder="0">
+        <input class="numberentry icono-placeholder-people" id="inputpeaple" type="number" placeholder="0">
       </div>
 
     </div>
@@ -47,7 +47,7 @@
           <h1 class="display-title">Tip Amounts</h1>
           <h2 class="display-subtitle">/ person</h2>
         </div>
-        <input class="display icon-dollar" type="number" placeholder="0.00">
+        <output id="displayamountstip" class="display icon-dollar" for="inputbill inputpeaple">0.00</output>
       </div>
 
       <div class="display-container">
@@ -55,7 +55,11 @@
           <h1 class="display-title">Total</h1>
           <h2 class="display-subtitle">/ person</h2>
         </div>
-        <input class="display icon-dollar" type="number" placeholder="0.00">
+        
+        <output id="displaytotalperson" class="display icon-dollar">0.00</output>
+        <!----
+        <input id="displaytotalperson" class="display icon-dollar" type="number" placeholder="0.00">
+          -->
       </div>
 
       <button class="reset-buttom">Reset</button>
@@ -65,8 +69,10 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Victor Bolivar</a>.
+    Coded by <a href="https://github.com/victorbolivar12">Victor Bolivar</a>.
   </div>
+
+  <script src="main.js"></script>
 
 </body>
 </html>
